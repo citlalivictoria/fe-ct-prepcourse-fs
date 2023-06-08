@@ -73,16 +73,15 @@ function colors(color) {
    switch (color){
       case "blue":
          return "This is blue";
-         break;
          case "red":
+
             return "This is red";
-            break;
             case "green":
+
                return "This is green";
-               break;
                case "orange":
+
                   return  "This is orange";
-                  break;
                   default:
                      return  "Color not found";
    }
@@ -176,7 +175,7 @@ function esPrimo(num) {
    // Tu código:
    if(num <=1) return false
    for(var i= 2; i < num; i++){
-      if(num % i == 0){
+      if(num % i === 0){
          return false;
       }
    }
@@ -187,11 +186,14 @@ function esVerdadero(valor) {
    // Si "valor" es verdadero retornar "Soy verdadero".
    // Caso contrario, retornar "Soy falso".
    // Tu código:
-   if(valor === true){
-      return "Soy verdadero";
-   }else{
-      return "Soy falso";
+    if(valor === true){
+       return "Soy verdadero";
+    }else{
+       return "Soy falso";
    }
+
+   // if(valor) return "Soy verdadero";
+   // return"Soy falso";
 }
 
 function tieneTresDigitos(num) {
@@ -212,11 +214,11 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-   var veces = 0;
+   var i = 0;
    do{
-      num += 5;
-      veces++;
-   }while (veces < 8);
+      num = num + 5; // es lo mismo que num +=5;
+      i++;
+   }while (i < 8);
    return num;
 }
 
